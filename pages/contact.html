@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initia
+  <link rel="stylesheet" href="style.css">
+  <title>contact</title>
+</head>
+<body>
+
+    <div class="contact-wrapper">
+      <h1>Posez-moi vos questions</h1>
+      <a href="../index.html">Retour à la page d'accueil</a>
+      <form class="form-horizontal" method="post" action="contact.php">
+      <label for="name">Nom</label>
+      <input type="text" id="name" placeholder="nom" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@mail.com" name="email" re
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" placeholder="0600000000" name="phone">
+      <label for="category">Catégorie de question</label>
+      <select id="category" name="category">
+        <option value="default">Choisissez une catégorie</option>
+        <option value="help">Aide</option>
+        <option value="pro-contact">Contact professionnel</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea rows="10" id="message" name="message" required></textarea>
+      <input type="file" id="monFichier" name="monFichier" accept="image/png, image/jpeg">
+      <button class="send-button" id="submit" type="submit">Envoyer</button>
+      <div class="advert-wrapper">
+      </div>
+    </form>
+  <style>
+    body {
+      background-color: rgba(255, 255, 0, 0.493);
+      margin: 0;
+      padding: 0;
+      position: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+      -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+      box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    input, textarea, select {
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      padding: 0.3rem;
+      border: solid 1px;
+    }
+    textarea {
+      max-width: 400px;
+      letter-spacing: 1px;
+    }
+    input:focus, textarea:focus, select:focus, button:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 11px -7px #bac4bf;
+      -moz-box-shadow: 0px 0px 11px -7px #bac4bf;
+      box-shadow: 0px 0px 11px -7px #bac4bf;
+      border: solid 1px #d5e1db;
+    }
+    label {
+      margin-bottom: 0.5rem;
+    }
+    .section-header {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      font: 300 2rem 'Oswald', sans-serif;
+      letter-spacing: 6px;
+      margin-bottom: 25px;
+    }
+    .form-horizontal {
+      max-width: 400px;
+      font-family: 'Lato';
+      font-weight: 400;
+    }
+    .send-button {
+      margin-top: 15px;
+      height: 34px;
+      width: 400px;
+      background-color: #d5e1db;
+      border: none;
+      border-radius: 7px;
+      font: 300 14px 'Lato', sans-serif;
+      letter-spacing: 2px;
+    }
+    .send-button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #bac4bf;
+    }
+    .advert-wrapper {
+      color: grey;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+  crossorigin="anonymous"
+></script>
+
+  </body>
+</html>

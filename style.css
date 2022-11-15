@@ -1,9 +1,8 @@
 
         body {
-                
+                 /* Cette media query cible les écrans dont la largeur minimale est de 1280px */
+                height: 100%; 
                 background: linear-gradient(25deg,blue,#699fef, white );
-                padding: 20px;
-                height: 720px;
                 color: white;
                 }
               @keyframes wheeeee {
@@ -18,10 +17,11 @@
                     }
                 }
         .wrapper {
-                
+                width: 100vw;
+                height: 100vh;
+                max-height: 700px;
                 font-family: 'Times New Roman', Times, serif;
-                margin: auto;
-                height: 750px;
+                margin: 0 auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
@@ -34,18 +34,17 @@
                
         nav { 
                 grid-area: nav;
-                width: 20vw;
                 max-width: 1200px;
                 color: white;
                 background-image: url(https://www.arnaudfrichphoto.com/images/ciel-astronomie/amas-globulaire-m13-hercule.jpg);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                width: 300px;
+                width: 30vw;
                 font-size: 20px;
                 line-height: 40px;
                 border-radius: 5%;
-                margin: 0 auto; 
+                margin: 0 auto;
+        
                 margin-top: 12px;
-                margin-left: 200px;
                 padding: 10px;
                 -webkit-border-radius: 5%;
                 -moz-border-radius: 5%;
@@ -56,14 +55,13 @@
 
         main {
                 grid-area: main;
-                width: 20vw;
+                width: 30vw;
                 margin: 0 auto;
                 margin-top: 10px;
-                margin-right: 200px;
-                max-width: 1200px;
+                justify-content: center;
                 text-align: left;
                 color: white;
-                padding-left: 30px;
+                padding: 10px;
                 background-image: url(https://www.arnaudfrichphoto.com/images/ciel-astronomie/amas-globulaire-m13-hercule.jpg);
                 border-radius: 5%;
                 -webkit-border-radius: 5%;
@@ -79,8 +77,7 @@
                 margin-top: 15px;
               }
         header {
-                width: 100%;
-                max-width: 2000px;
+                width: 100vw;
                 font-size: 30px;
                 margin-top: 5px;
                 grid-area: header;
@@ -129,7 +126,7 @@
                 grid-area: contact;
                 font-size: 25px;
                 text-align: center;
-                width: 20vw;
+                width: 70%;
                 margin: 0 auto;
                 max-width: 1200px;
                 border: 0.5px solid transparent;
@@ -144,12 +141,23 @@
               }
         footer {
                 background-image: url(https://www.arnaudfrichphoto.com/images/ciel-astronomie/amas-globulaire-m13-hercule.jpg);
-                max-width: 2000px;
+        
                 grid-area: footer;
-                width: 100%;
+                width: 100vw;
                 text-align: center;
                 height: 55px;
                 padding-top: 15px;
                 margin-top: 12px;
               }
+              /*La media query suivante s'applique pour tous les appareils dont la hauteur minimale est de 680px ou pour les écrans au format paysage */
+@media (max-width: 680px) { 
+        .contact, main, nav {
+                font-size: 0.8em;
+        }
+        nav h2, main h3 {
+                font-size: 0.9em;
+        }
+ }
+                
+                
         
